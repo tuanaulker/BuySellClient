@@ -1,0 +1,21 @@
+<mat-toolbar class="navbarColor">
+  <mat-toolbar-row>
+    <h1 class="buysell">BuySell</h1>
+    <span class="example-spacer"></span>
+    <span class="menu-spacer"></span>
+    <div class="cright">
+      <div *ngIf="!hasUsername()">
+        <a mat-button [routerLink]="'/login'">Login</a>
+        <a mat-button [routerLink]="'/register'">Register</a>
+      </div>
+      <div *ngIf="hasUsername()" class="menu">
+        <button mat-button [matMenuTriggerFor]="menu"> {{ getUsername() }} <mat-icon>person_outline</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="logOut()">Logout <mat-icon>exit_to_app</mat-icon> </button>
+          <button mat-menu-item [routerLink]="'/profile'">Profile <mat-icon>how_to_reg</mat-icon></button>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>

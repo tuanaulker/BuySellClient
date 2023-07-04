@@ -1,0 +1,33 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.navbarColor {
+  background: rgb(34, 178, 195);
+  background: linear-gradient(0deg, rgba(34, 178, 195, 1) 0%, rgba(45, 140, 253, 1) 100%);
+}
+
+
+// @import url('https://fonts.googleapis.com/css?family=Handlee');
+// .buysell{
+//     font-family: Handlee, cursive;
+//     text-align: center;
+//     font-size: 35px;
+//     color: rgba(235, 254, 255, 0.75);
+//     //background-color: rgb(84, 84, 84);
+//     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Faster+One');
+.buysell{
+    font-family: "Faster One", cursive;
+    text-align: center;
+    font-size: 35px;
+    color: rgba(235, 254, 255, 0.75);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    margin-left: 30px;
+}
+
+.cright{
+  margin-right: 20px;
+}
